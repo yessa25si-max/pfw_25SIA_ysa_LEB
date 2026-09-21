@@ -29,3 +29,4 @@ Route::get('/mahasiswa/detail', function () {
 Route::get('/mahasiswa/profile', function () {
     return '<h1>Selamat Datang!</h1><h2>Ini halaman Profil Mahasiswa</h2>';
 });
+    
