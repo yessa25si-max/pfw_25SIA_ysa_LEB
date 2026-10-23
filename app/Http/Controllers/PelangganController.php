@@ -65,7 +65,6 @@ class PelangganController extends Controller
      */
     public function update(Request $request, string $id)
     {
-{
         $pelanggan_id = $id;
         $pelanggan = Pelanggan::findOrFail($pelanggan_id);
 
@@ -78,7 +77,6 @@ class PelangganController extends Controller
 
         $pelanggan->save();
         return redirect()->route('pelanggan.index')->with('success','Perubahan Data Berhasil!');
-}
     }
 
     /**
